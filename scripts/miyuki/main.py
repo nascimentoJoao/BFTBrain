@@ -121,7 +121,7 @@ def terminate_nodes(experiment_name, profile_name):
 
 @miyuki_log('Instantiating Master Node ...')
 def get_master():
-    return get_nodes(f'{args.experiment}', 'myprofilexyz')
+    return get_nodes(f'{args.experiment}', 'paramalan')
 
 
 @miyuki_log('Instantiating Worker Nodes ...')
@@ -137,7 +137,7 @@ def get_workers():
 
 @miyuki_log('Terminating Master Node ...')
 def terminate_master():
-    terminate_nodes(f'{args.experiment}', 'myprofilexyz')
+    terminate_nodes(f'{args.experiment}', 'paramalan')
 
 
 @miyuki_log('Terminating Worker Nodes ...')
